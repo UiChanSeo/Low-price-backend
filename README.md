@@ -3,6 +3,8 @@
 ```
 이름  : Low-Price Backend
 개발자 : seouichan@naver.com. 
+     : hoopa2@naver.com
+     : alex021009@naver.com
 ```
 
 # 설명
