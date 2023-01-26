@@ -18,3 +18,4 @@ RUN="dev" PYTHONPATH=${PWD} gunicorn app.run_api:app -b 0.0.0.0:8080 -w 3
 # History
 - v0.1.1 : 2022/08, 앱과 연동이 되도록 기본적인 동작을 구현
 - v0.1.2 :        , 대상 db는 sqlite로 함. ( 차후 mysql 고려 )
+- ...
