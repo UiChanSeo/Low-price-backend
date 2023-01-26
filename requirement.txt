@@ -1,0 +1,17 @@
+flask
+flask-login
+Flask-RESTful
+Flask-API
+flask-bcrypt
+flask-security-too
+flask-jwt
+flask-jwt-extended
+jwcrypto
+requests
+marshmallow
+datetime
+collection
+setuptools_rust
+pyjwt
+gunicorn
+sqlalchemy

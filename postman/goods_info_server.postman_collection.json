@@ -1,0 +1,565 @@
+{
+	"info": {
+		"_postman_id": "5371d41a-4e6c-46d5-a479-88203e215552",
+		"name": "goods_info_server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "categories_add_with_login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTQ0MTM1NTgsImlhdCI6MTYxNDMyNzE1Mywic3ViIjoic2ltcHNvbiJ9.FLJ2FX4aekFwN_xF1Z1H1-pvY7FMQWCRjoC7n2MC8IU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:5000/category/login/add/transfer",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"category",
+						"login",
+						"add",
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories_get",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTQ0MTM1NTgsImlhdCI6MTYxNDMyNzE1Mywic3ViIjoic2ltcHNvbiJ9.FLJ2FX4aekFwN_xF1Z1H1-pvY7FMQWCRjoC7n2MC8IU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:5000/category/get",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"category",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "category_inc_count",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5000/category/login/inc_count/taxi",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"category",
+						"login",
+						"inc_count",
+						"taxi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "category_del_with_login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5000/category/login/del?title=transfer",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"category",
+						"login",
+						"del"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "transfer"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "category_del_all_with_login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5000/category/login/del",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"category",
+						"login",
+						"del"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "item_add_with_login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTQ0MTM1NTgsImlhdCI6MTYxNDMyNzE1Mywic3ViIjoic2ltcHNvbiJ9.FLJ2FX4aekFwN_xF1Z1H1-pvY7FMQWCRjoC7n2MC8IU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"bus2\",\r\n    \"category_id\":2,\r\n    \"goods_url\":\"https://naver.com/goods/2\",\r\n    \"image_url\":\"https://naver.com/goods/image/2.jpg\",\r\n    \"mall_name\":\"test mall\",\r\n    \"lprice\":110,\r\n    \"hprice\":210,\r\n    \"updated\":2020203131323\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5000/goods/login/add",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"goods",
+						"login",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "item_get_with_login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "1111",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "jwt eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTQ0MTM1NTgsImlhdCI6MTYxNDMyNzE1Mywic3ViIjoic2ltcHNvbiJ9.FLJ2FX4aekFwN_xF1Z1H1-pvY7FMQWCRjoC7n2MC8IU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5000/goods/login/get/id?name=*&limit=15&category=-1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"goods",
+						"login",
+						"get",
+						"id"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "*"
+						},
+						{
+							"key": "limit",
+							"value": "15"
+						},
+						{
+							"key": "category",
+							"value": "-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "item_del_all_with_login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTQ0MTMxNjcsImlhdCI6MTYxNDMyNjc2Miwic3ViIjoic2ltcHNvbiJ9.cQHTy-ON36NM5G0-NiaoOlaT21ce4RcKJYhE1MGVHuI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5000/goods/login/del/id?name=*&id=-1&mall_name=*",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"goods",
+						"login",
+						"del",
+						"id"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "*"
+						},
+						{
+							"key": "id",
+							"value": "-1"
+						},
+						{
+							"key": "mall_name",
+							"value": "*"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userid\": \"simpson\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5000/auth/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"simpson\",\r\n    \"passwd_hash\": \"12345678\",\r\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTQwNzEyMDYsImlhdCI6MTYxMzk4NDgwMSwic3ViIjoic2ltcHNvbiJ9.VeHDzIsJkZKwHCUPBUxGUUhy4NmvFF9ggMBD1nzJ08E\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://192.168.4.205:5000/auth/logout",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"4",
+						"205"
+					],
+					"port": "5000",
+					"path": [
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userid\": \"simpson\",\r\n    \"password\": \"12345678\",\r\n    \"email\": \"swhors@naver.com\",\r\n    \"username\": \"simpson\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5000/auth/user/add",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"auth",
+						"user",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_get_all_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userid\": \"simpson\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5000/auth/user/get",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"auth",
+						"user",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_get_one_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userid\": \"simpson\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5000/auth/user/get/simpson",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"auth",
+						"user",
+						"get",
+						"simpson"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_del",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userid\": \"simpson\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5000/auth/user/del",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"auth",
+						"user",
+						"del"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "blacklist_add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"090909123\",\r\n    \"userid\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5000/auth/blacklist/add",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"auth",
+						"blacklist",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "blacklist_is",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5000/auth/blacklist/is/090909123",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"auth",
+						"blacklist",
+						"is",
+						"090909123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "blacklist_get_all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5000/auth/blacklist/getall",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"auth",
+						"blacklist",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "blacklist_del_token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5000/auth/blacklist/del/090909123",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"auth",
+						"blacklist",
+						"del",
+						"090909123"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
