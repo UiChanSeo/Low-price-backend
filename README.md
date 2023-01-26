@@ -1,6 +1,8 @@
-# Low-Price Backend
+# 프로그래 정보
+
 ```
-Author : seouichan@naver.com
+이름  : Low-Price Backend
+개발자 : seouichan@naver.com. 
 ```
 
 # 설명
